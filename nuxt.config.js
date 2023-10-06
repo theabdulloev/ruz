@@ -42,19 +42,7 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
-    proxy: true,
-    proxyHeaders: false,
-    credentials: false,
-    proxy: {
-      'https://jsonplaceholder.typicode.com/users': {
-        target: '10.10.10.96:3128',
-        // pathRewrite: {
-        //   '^/users': ''
-        // },
-        auth: 'ismoiljon.abdulloev:far-1111'
-      }
-    }
+    baseURL: '/'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
